@@ -18,7 +18,7 @@ gem 'em-redis'
 gem 'eventmachine'
 gem 'fast_xs'
 gem 'fastimage'
-gem 'fog', require: false
+gem 'fog', '>= 1.14.0', require: false
 gem 'has_ip_address'
 gem 'hiredis'
 
@@ -29,7 +29,7 @@ gem 'jquery-rails'
 gem 'minitest'
 gem 'multi_json'
 gem 'mustache'
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.12.5'
 gem "omniauth"
 gem "omniauth-openid"
 gem "openid-redis-store"
@@ -45,7 +45,7 @@ gem 'redis'
 gem 'redis-rails'
 gem 'rest-client'
 gem 'rinku'
-gem 'sanitize'
+gem 'sanitize', '>= 2.0.5'
 gem 'sass'
 gem 'seed-fu'
 gem 'sidekiq'
