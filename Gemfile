@@ -48,7 +48,7 @@ gem 'rinku'
 gem 'sanitize'
 gem 'sass'
 gem 'seed-fu'
-gem 'sidekiq'
+gem 'sidekiq', '>= 6.4.0'
 gem 'sinatra', require: nil
 gem 'slim'  # required for sidekiq-web
 gem 'therubyracer', require: 'v8'
