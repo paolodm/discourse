@@ -99,7 +99,7 @@ end
 group :development do 
   gem 'better_errors'
   gem 'binding_of_caller' # I tried adding this and got an occational crash
-  gem 'librarian', '>= 0.0.25', require: false
+  gem 'librarian', '>= 0.0.26', require: false
   gem 'pry-rails'  
 end
 
