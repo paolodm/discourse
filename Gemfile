@@ -49,7 +49,7 @@ gem 'sanitize'
 gem 'sass'
 gem 'seed-fu'
 gem 'sidekiq'
-gem 'sinatra', require: nil
+gem 'sinatra', '>= 2.2.0', require: nil
 gem 'slim'  # required for sidekiq-web
 gem 'therubyracer', require: 'v8'
 gem 'thin'
