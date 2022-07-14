@@ -39,7 +39,7 @@ gem "omniauth-github"
 gem 'oj'
 gem 'pbkdf2'
 gem 'pg'
-gem 'rails'
+gem 'rails', '>= 5.2.8.1'
 gem 'rake'
 gem 'redis'
 gem 'redis-rails'
