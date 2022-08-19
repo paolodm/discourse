@@ -30,12 +30,12 @@ gem 'minitest'
 gem 'multi_json'
 gem 'mustache'
 gem 'nokogiri'
-gem "omniauth"
-gem "omniauth-openid"
+gem "omniauth", ">= 2.0.0"
+gem "omniauth-openid", ">= 2.0.1"
 gem "openid-redis-store"
-gem "omniauth-facebook"
+gem "omniauth-facebook", ">= 1.6.0"
 gem "omniauth-twitter"
-gem "omniauth-github"
+gem "omniauth-github", ">= 2.0.0"
 gem 'oj'
 gem 'pbkdf2'
 gem 'pg'
