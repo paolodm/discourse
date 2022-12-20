@@ -39,10 +39,10 @@ gem "omniauth-github"
 gem 'oj'
 gem 'pbkdf2'
 gem 'pg'
-gem 'rails'
+gem 'rails', '>= 4.0.0'
 gem 'rake'
 gem 'redis'
-gem 'redis-rails'
+gem 'redis-rails', '>= 4.0.0'
 gem 'rest-client'
 gem 'rinku'
 gem 'sanitize'
@@ -69,7 +69,7 @@ gem 'discourse_emoji', path: 'vendor/gems/discourse_emoji'
 # allow everywhere for now cause we are allowing asset debugging in prd
 group :assets do
   gem 'sass'
-  gem 'sass-rails'
+  gem 'sass-rails', '>= 4.0.0'
   gem 'turbo-sprockets-rails3'
   gem 'uglifier'
 end
