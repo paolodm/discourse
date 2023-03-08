@@ -25,7 +25,7 @@ gem 'hiredis'
 # note: for image_optim to correctly work you need
 # sudo apt-get install -y advancecomp gifsicle jpegoptim libjpeg-progs optipng pngcrush
 gem 'image_optim'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.0.1'
 gem 'minitest'
 gem 'multi_json'
 gem 'mustache'
@@ -33,23 +33,23 @@ gem 'nokogiri'
 gem "omniauth"
 gem "omniauth-openid"
 gem "openid-redis-store"
-gem "omniauth-facebook"
+gem "omniauth-facebook", ">= 1.6.0"
 gem "omniauth-twitter"
 gem "omniauth-github"
 gem 'oj'
 gem 'pbkdf2'
 gem 'pg'
-gem 'rails'
+gem 'rails', '>= 5.0.0'
 gem 'rake'
 gem 'redis'
-gem 'redis-rails'
+gem 'redis-rails', '>= 5.0.0'
 gem 'rest-client'
 gem 'rinku'
 gem 'sanitize'
 gem 'sass'
 gem 'seed-fu'
 gem 'sidekiq'
-gem 'sinatra', require: nil
+gem 'sinatra', '>= 2.0.0', require: nil
 gem 'slim'  # required for sidekiq-web
 gem 'therubyracer', require: 'v8'
 gem 'thin'
@@ -69,7 +69,7 @@ gem 'discourse_emoji', path: 'vendor/gems/discourse_emoji'
 # allow everywhere for now cause we are allowing asset debugging in prd
 group :assets do
   gem 'sass'
-  gem 'sass-rails'
+  gem 'sass-rails', '>= 5.0.5'
   gem 'turbo-sprockets-rails3'
   gem 'uglifier'
 end
