@@ -11,7 +11,7 @@ gem 'simple_handlebars_rails', path: 'vendor/gems/simple_handlebars_rails'
 gem 'redcarpet', require: false
 gem 'activerecord-postgres-hstore'
 gem 'acts_as_paranoid'
-gem 'active_attr' # until we get ActiveModel::Model with Rails 4
+gem 'active_attr' , '>= 0.15.1' # until we get ActiveModel::Model with Rails 4
 gem 'airbrake', '3.1.2' # errbit is broken with 3.1.3 for now
 gem 'clockwork', require: false
 gem 'em-redis'
@@ -25,7 +25,7 @@ gem 'hiredis'
 # note: for image_optim to correctly work you need
 # sudo apt-get install -y advancecomp gifsicle jpegoptim libjpeg-progs optipng pngcrush
 gem 'image_optim'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.0.1'
 gem 'minitest'
 gem 'multi_json'
 gem 'mustache'
@@ -39,15 +39,15 @@ gem "omniauth-github"
 gem 'oj'
 gem 'pbkdf2'
 gem 'pg'
-gem 'rails'
+gem 'rails', '>= 6.1.7.3'
 gem 'rake'
 gem 'redis'
-gem 'redis-rails'
+gem 'redis-rails', '>= 5.0.2'
 gem 'rest-client'
 gem 'rinku'
 gem 'sanitize'
 gem 'sass'
-gem 'seed-fu'
+gem 'seed-fu', '>= 2.3.6'
 gem 'sidekiq'
 gem 'sinatra', require: nil
 gem 'slim'  # required for sidekiq-web
@@ -69,7 +69,7 @@ gem 'discourse_emoji', path: 'vendor/gems/discourse_emoji'
 # allow everywhere for now cause we are allowing asset debugging in prd
 group :assets do
   gem 'sass'
-  gem 'sass-rails'
+  gem 'sass-rails', '>= 5.0.8'
   gem 'turbo-sprockets-rails3'
   gem 'uglifier'
 end
