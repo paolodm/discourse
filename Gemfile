@@ -8,48 +8,48 @@ gem 'message_bus', path: 'vendor/gems/message_bus'
 gem 'rails_multisite', path: 'vendor/gems/rails_multisite'
 gem 'simple_handlebars_rails', path: 'vendor/gems/simple_handlebars_rails'
 
-gem 'redcarpet', require: false
+gem 'redcarpet', '>= 3.5.1', require: false
 gem 'activerecord-postgres-hstore'
-gem 'acts_as_paranoid'
-gem 'active_attr' # until we get ActiveModel::Model with Rails 4
+gem 'acts_as_paranoid', '>= 0.6.1'
+gem 'active_attr' , '>= 0.15.3' # until we get ActiveModel::Model with Rails 4
 gem 'airbrake', '3.1.2' # errbit is broken with 3.1.3 for now
 gem 'clockwork', require: false
 gem 'em-redis'
 gem 'eventmachine'
 gem 'fast_xs'
 gem 'fastimage'
-gem 'fog', require: false
+gem 'fog', '>= 1.14.0', require: false
 gem 'has_ip_address'
 gem 'hiredis'
 
 # note: for image_optim to correctly work you need
 # sudo apt-get install -y advancecomp gifsicle jpegoptim libjpeg-progs optipng pngcrush
 gem 'image_optim'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.4.0'
 gem 'minitest'
 gem 'multi_json'
 gem 'mustache'
-gem 'nokogiri'
-gem "omniauth"
-gem "omniauth-openid"
+gem 'nokogiri', '>= 1.13.9'
+gem "omniauth", ">= 2.0.0"
+gem "omniauth-openid", ">= 2.0.1"
 gem "openid-redis-store"
-gem "omniauth-facebook"
+gem "omniauth-facebook", ">= 1.6.0"
 gem "omniauth-twitter"
-gem "omniauth-github"
+gem "omniauth-github", ">= 2.0.0"
 gem 'oj'
 gem 'pbkdf2'
 gem 'pg'
-gem 'rails'
-gem 'rake'
+gem 'rails', '>= 6.1.7.3'
+gem 'rake', '>= 12.3.3'
 gem 'redis'
-gem 'redis-rails'
-gem 'rest-client'
+gem 'redis-rails', '>= 5.0.2'
+gem 'rest-client', '>= 1.8.0'
 gem 'rinku'
-gem 'sanitize'
+gem 'sanitize', '>= 4.6.3'
 gem 'sass'
-gem 'seed-fu'
-gem 'sidekiq'
-gem 'sinatra', require: nil
+gem 'seed-fu', '>= 2.3.6'
+gem 'sidekiq', '>= 6.2.1'
+gem 'sinatra', '>= 2.2.3', require: nil
 gem 'slim'  # required for sidekiq-web
 gem 'therubyracer', require: 'v8'
 gem 'thin'
@@ -69,9 +69,9 @@ gem 'discourse_emoji', path: 'vendor/gems/discourse_emoji'
 # allow everywhere for now cause we are allowing asset debugging in prd
 group :assets do
   gem 'sass'
-  gem 'sass-rails'
+  gem 'sass-rails', '>= 5.0.8'
   gem 'turbo-sprockets-rails3'
-  gem 'uglifier'
+  gem 'uglifier', '>= 2.7.2'
 end
 
 group :test do
@@ -91,15 +91,15 @@ group :test, :development do
   gem 'rb-fsevent'
   gem 'rb-inotify', '~> 0.8.8', require: RUBY_PLATFORM.include?('linux') && 'rb-inotify'
   gem 'rspec-rails'
-  gem 'shoulda'
+  gem 'shoulda', '>= 3.4.0'
   gem 'simplecov', require: false
   gem 'terminal-notifier-guard', require: RUBY_PLATFORM.include?('darwin') && 'terminal-notifier-guard'
 end
 
 group :development do 
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.8.0'
   gem 'binding_of_caller' # I tried adding this and got an occational crash
-  gem 'librarian', '>= 0.0.25', require: false
+  gem 'librarian', '>= 0.0.26', require: false
   gem 'pry-rails'  
 end
 
