@@ -18,7 +18,7 @@ gem 'em-redis'
 gem 'eventmachine'
 gem 'fast_xs'
 gem 'fastimage'
-gem 'fog', require: false
+gem 'fog', '>= 1.37.0', require: false
 gem 'has_ip_address'
 gem 'hiredis'
 
