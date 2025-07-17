@@ -9,11 +9,11 @@ gem 'rails_multisite', path: 'vendor/gems/rails_multisite'
 gem 'simple_handlebars_rails', path: 'vendor/gems/simple_handlebars_rails'
 
 gem 'redcarpet', require: false
-gem 'activerecord-postgres-hstore'
-gem 'acts_as_paranoid'
-gem 'active_attr' # until we get ActiveModel::Model with Rails 4
+gem 'activerecord-postgres-hstore', '>= 0.7.2'
+gem 'acts_as_paranoid', '>= 0.6.1'
+gem 'active_attr' , '>= 0.15.1' # until we get ActiveModel::Model with Rails 4
 gem 'airbrake', '3.1.2' # errbit is broken with 3.1.3 for now
-gem 'clockwork', require: false
+gem 'clockwork', '>= 0.5.0', require: false
 gem 'em-redis'
 gem 'eventmachine'
 gem 'fast_xs'
@@ -25,34 +25,34 @@ gem 'hiredis'
 # note: for image_optim to correctly work you need
 # sudo apt-get install -y advancecomp gifsicle jpegoptim libjpeg-progs optipng pngcrush
 gem 'image_optim'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.0.1'
 gem 'minitest'
 gem 'multi_json'
 gem 'mustache'
 gem 'nokogiri'
-gem "omniauth"
-gem "omniauth-openid"
+gem "omniauth", ">= 1.1.2"
+gem "omniauth-openid", ">= 2.0.1"
 gem "openid-redis-store"
-gem "omniauth-facebook"
-gem "omniauth-twitter"
-gem "omniauth-github"
+gem "omniauth-facebook", ">= 1.6.0"
+gem "omniauth-twitter", ">= 0.0.15"
+gem "omniauth-github", ">= 2.0.0"
 gem 'oj'
 gem 'pbkdf2'
 gem 'pg'
-gem 'rails'
+gem 'rails', '>= 7.1.0'
 gem 'rake'
 gem 'redis'
-gem 'redis-rails'
+gem 'redis-rails', '>= 5.0.2'
 gem 'rest-client'
 gem 'rinku'
-gem 'sanitize'
+gem 'sanitize', '>= 2.0.5'
 gem 'sass'
-gem 'seed-fu'
+gem 'seed-fu', '>= 2.3.6'
 gem 'sidekiq'
-gem 'sinatra', require: nil
+gem 'sinatra', '>= 2.0.0', require: nil
 gem 'slim'  # required for sidekiq-web
 gem 'therubyracer', require: 'v8'
-gem 'thin'
+gem 'thin', '>= 1.5.1'
 
 # Gem that enables support for plugins. It is required.
 gem 'discourse_plugin', path: 'vendor/gems/discourse_plugin'
@@ -70,7 +70,7 @@ gem 'discourse_emoji', path: 'vendor/gems/discourse_emoji'
 group :assets do
   gem 'sass'
   gem 'sass-rails'
-  gem 'turbo-sprockets-rails3'
+  gem 'turbo-sprockets-rails3', '>= 0.3.7'
   gem 'uglifier'
 end
 
@@ -85,13 +85,13 @@ group :test, :development do
   gem 'fabrication'
   gem 'guard-jasmine'
   gem 'guard-rspec' 
-  gem 'guard-spork'
+  gem 'guard-spork', '>= 1.4.3'
   gem 'jasminerice'
   gem 'mocha', require: false
   gem 'rb-fsevent'
-  gem 'rb-inotify', '~> 0.8.8', require: RUBY_PLATFORM.include?('linux') && 'rb-inotify'
-  gem 'rspec-rails'
-  gem 'shoulda'
+  gem 'rb-inotify', '~> 0.9.0', require: RUBY_PLATFORM.include?('linux') && 'rb-inotify'
+  gem 'rspec-rails', '>= 2.13.0'
+  gem 'shoulda', '>= 3.4.0'
   gem 'simplecov', require: false
   gem 'terminal-notifier-guard', require: RUBY_PLATFORM.include?('darwin') && 'terminal-notifier-guard'
 end
