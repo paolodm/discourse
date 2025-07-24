@@ -9,7 +9,7 @@ gem 'rails_multisite', path: 'vendor/gems/rails_multisite'
 gem 'simple_handlebars_rails', path: 'vendor/gems/simple_handlebars_rails'
 
 gem 'redcarpet', require: false
-gem 'activerecord-postgres-hstore'
+gem 'activerecord-postgres-hstore', '>= 0.7.2'
 gem 'acts_as_paranoid'
 gem 'active_attr' # until we get ActiveModel::Model with Rails 4
 gem 'airbrake', '3.1.2' # errbit is broken with 3.1.3 for now
@@ -25,11 +25,11 @@ gem 'hiredis'
 # note: for image_optim to correctly work you need
 # sudo apt-get install -y advancecomp gifsicle jpegoptim libjpeg-progs optipng pngcrush
 gem 'image_optim'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 2.2.1'
 gem 'minitest'
 gem 'multi_json'
 gem 'mustache'
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.18.9'
 gem "omniauth"
 gem "omniauth-openid"
 gem "openid-redis-store"
@@ -39,13 +39,13 @@ gem "omniauth-github"
 gem 'oj'
 gem 'pbkdf2'
 gem 'pg'
-gem 'rails'
+gem 'rails', '>= 3.2.13'
 gem 'rake'
 gem 'redis'
 gem 'redis-rails'
 gem 'rest-client'
 gem 'rinku'
-gem 'sanitize'
+gem 'sanitize', '>= 2.0.5'
 gem 'sass'
 gem 'seed-fu'
 gem 'sidekiq'
@@ -69,8 +69,8 @@ gem 'discourse_emoji', path: 'vendor/gems/discourse_emoji'
 # allow everywhere for now cause we are allowing asset debugging in prd
 group :assets do
   gem 'sass'
-  gem 'sass-rails'
-  gem 'turbo-sprockets-rails3'
+  gem 'sass-rails', '>= 4.0.0'
+  gem 'turbo-sprockets-rails3', '>= 0.3.7'
   gem 'uglifier'
 end
 
@@ -83,14 +83,14 @@ group :test, :development do
   gem 'guard-jshint-on-rails'
   gem 'certified'
   gem 'fabrication'
-  gem 'guard-jasmine'
-  gem 'guard-rspec' 
-  gem 'guard-spork'
+  gem 'guard-jasmine', '>= 1.13.0'
+  gem 'guard-rspec' , '>= 2.4.1'
+  gem 'guard-spork', '>= 1.4.3'
   gem 'jasminerice'
   gem 'mocha', require: false
   gem 'rb-fsevent'
   gem 'rb-inotify', '~> 0.8.8', require: RUBY_PLATFORM.include?('linux') && 'rb-inotify'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 2.13.0'
   gem 'shoulda'
   gem 'simplecov', require: false
   gem 'terminal-notifier-guard', require: RUBY_PLATFORM.include?('darwin') && 'terminal-notifier-guard'
