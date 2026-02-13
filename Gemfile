@@ -33,9 +33,9 @@ gem 'nokogiri'
 gem "omniauth"
 gem "omniauth-openid"
 gem "openid-redis-store"
-gem "omniauth-facebook"
+gem "omniauth-facebook", ">= 1.6.0"
 gem "omniauth-twitter"
-gem "omniauth-github"
+gem "omniauth-github", ">= 1.1.1"
 gem 'oj'
 gem 'pbkdf2'
 gem 'pg'
